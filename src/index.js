@@ -10,7 +10,7 @@ ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Handle} />
-      <Route path="/city/:num" component={City} />
+      <Route path="/city/:handle" component={City} />
     </Route>
   </Router>,
   document.getElementById('root')
