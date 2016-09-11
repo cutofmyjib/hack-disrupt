@@ -1,3 +1,6 @@
+/* ---------------------------------------
+              App
+--------------------------------------- */
 .background {
   background: rgba(5,197,255,1);
   background: -moz-linear-gradient(-45deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%);
@@ -23,12 +26,27 @@ main, header {
 .app-name {
   margin: 0;
   color: white;
-  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
 }
 
 header {
   height: 20vh;
+  display: flex;
+}
+
+.reverse {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.app-name {
+  padding: 40px;
+  font-size: 14px;
 }
 
 main {
@@ -42,13 +60,29 @@ main {
 
 .twitter-form {
   padding: 20px;
-
   color: gray;
   width: 340px;
-  height: 190px;
+  height: 100px;
   background: white;
 }
 
+input {
+  border: none;
+  color: black;
+  background: none;
+  font-size: 1.25em;
+}
+
+.twitter-form-submit {
+  position: absolute;
+  top: 350px;
+  color: white;
+  font-size: 2em;
+  border: none;
+  height: 50px;
+  width: 50px;
+  background: #0FACF3;
+}
 
 .App {
   text-align: center;
