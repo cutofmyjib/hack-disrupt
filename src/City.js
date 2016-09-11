@@ -14,6 +14,12 @@ class City extends Component {
     return (
       <div>
         <h3>City: {this.state.city.info.city.name}</h3>
+        <img src={`https://nomadlist.com/${this.state.city.media.image['1000']}`} />
+        <ul>
+          <li>Nightlife: {this.state.city.scores.nightlife * 100} %</li>
+          <li>Places to work: {this.state.city.scores.places_to_work * 100} %</li>
+          <li>Friendly to foreigners: {this.state.city.scores.friendly_to_foreigners * 100}%</li>
+        </ul>
       </div>
     );
   }
