@@ -9,13 +9,14 @@ class App extends Component {
         <header>
           <h1 className="app-name">
             DESTIN<br />
-            <i className="material-icons reverse">play_arrow</i>ATE
+            <span className="pull"><i className="material-icons reverse">play_arrow</i></span>
+            ATE
             </h1>
         </header>
         <main>
           <div className="twitter-form">
             <h4 className="main-twitter">WHAT IS YOUR TWITTER HANDLE?</h4>
-            <input type="text" placeholder="destinate-child" />
+            <input type="text" />
             <button className="twitter-form-submit"><i className="material-icons">play_arrow</i></button>
           </div>
         </main>
