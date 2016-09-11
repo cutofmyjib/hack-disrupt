@@ -20,7 +20,7 @@ class Handle extends Component {
     return Math.abs(hash) % 720;
   }
   submit() {
-    browserHistory.push(`/city/${this.hash()}`)
+    browserHistory.push(`/city/${this.state.handle}`)
   }
   render() {
     return (

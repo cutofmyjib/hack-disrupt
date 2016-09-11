@@ -123,3 +123,10 @@ main.main-city {
 .city-stats {
   height: 80%;
 }
+
+.city-match {
+  font-size: 1.75em;
+  color: purple;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
