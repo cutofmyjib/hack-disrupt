@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import Cities from './cities.json';
 
+class Gradient extends Component {
+    render() {
+        var stl = {width: parseInt(this.props.pct)}
+        var data = (
+            <div>
+                <p>{this.props.name}</p>
+                <div style={stl} className="meter"></div>
+            </div>
+        );
+        return data;
+    }
+}
+
 class City extends Component {
   constructor(props) {
     super(props)
@@ -11,6 +24,13 @@ class City extends Component {
   }
 
   render() {
+
+    var props = [
+        <Gradient key="Nightlife" name="Nightlife" pct="70" />,
+        <Gradient key="Places to work" name="Places to work" pct="30" />,
+        <Gradient key="Friendly to foreigners" name="Friendly to foreigners" pct="70" />,
+    ];
+
     return (
       <div className="App">
       <div className="secondary-header background overlay"></div>
@@ -22,12 +42,11 @@ class City extends Component {
             <img src={"http://nomadlist.com"+this.state.city.media.image['1000']} />
             <h3 className="city-name">City: {this.state.city.info.city.name}</h3>
             <div className="city-stats">
-            <div>Nightlife: {this.state.city.scores.nightlife * 100} %</div>
-            <div>Places to work: {this.state.city.scores.places_to_work * 100} %</div>
-            <div>Friendly to foreigners: {this.state.city.scores.friendly_to_foreigners * 100}%</div>
+            <div>
+                { props }
+            </div>
           </div>
           </div>
-
         </main>
       </div>
     );

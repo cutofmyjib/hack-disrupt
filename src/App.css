@@ -76,7 +76,7 @@ input {
 }
 
 .twitter-form-submit {
-  height: 26px;
+  height: 50px;
   position: absolute;
   top: 340px;
   color: white;
@@ -115,10 +115,15 @@ main.main-city {
   height: 150px;
 }
 
+.meter {
+    height: 20px;
+    background-color: black;
+}
+
 .city-name-div img {
   height: 250px;
 }
 
-.city-stats {
+.c6ity-stats {
   height: 80%;
 }
