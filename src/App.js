@@ -14,11 +14,7 @@ class App extends Component {
             </h1>
         </header>
         <main>
-          <div className="twitter-form">
-            <h4 className="main-twitter">WHAT IS YOUR TWITTER HANDLE?</h4>
-            <input type="text" />
-            <button className="twitter-form-submit"><i className="material-icons">play_arrow</i></button>
-          </div>
+          {this.props.children}
         </main>
       </div>
     );
