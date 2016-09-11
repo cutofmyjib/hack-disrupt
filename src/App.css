@@ -76,12 +76,12 @@ input {
 }
 
 .twitter-form-submit {
+  height: 26px;
   position: absolute;
   top: 340px;
   color: white;
   font-size: 2em;
   border: none;
-  height: 50px;
   width: 50px;
   background: #0FACF3;
 }

@@ -28,10 +28,8 @@ class Handle extends Component {
       <div className="background overlay"></div>
       <header>
         <h1 className="app-name">
-          DESTIN<br />
-          <span className="pull"><i className="material-icons reverse">play_arrow</i></span>
-          ATE
-          </h1>
+          DESTINATE
+        </h1>
       </header>
       <main>
       <div className="twitter-form">

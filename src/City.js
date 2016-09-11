@@ -15,12 +15,8 @@ class City extends Component {
       <div className="App">
       <div className="secondary-header background overlay"></div>
       <header className="header-nav">
-          <h1 className="app-name">
-            DESTIN<br />
-            <span className="pull"><i className="material-icons reverse">play_arrow</i></span>
-            ATE
-            </h1>
-        </header>
+          <h1 className="app-name">DESTINATE</h1>
+      </header>
         <main className="main-city">
           <div className="city-name-div">
             <img src={"http://nomadlist.com"+this.state.city.media.image['1000']} />
