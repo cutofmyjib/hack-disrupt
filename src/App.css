@@ -93,3 +93,32 @@ input {
 /* ---------------------------------------
               City
 --------------------------------------- */
+.secondary-header.background.overlay {
+  height: 15vh;
+}
+
+.header-nav {
+  height: 15vh;
+}
+
+header.header-nav {
+  height: 8vh;
+  padding-bottom: 0;
+}
+
+main.main-city {
+  padding: 7px 0 0 0;
+}
+
+.main-city {
+  align-items: flex-start;
+  height: 150px;
+}
+
+.city-name-div img {
+  height: 250px;
+}
+
+.city-stats {
+  height: 80%;
+}
