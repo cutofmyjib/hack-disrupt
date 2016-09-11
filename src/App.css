@@ -1,3 +1,55 @@
+.background {
+  background: rgba(5,197,255,1);
+  background: -moz-linear-gradient(-45deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(5,197,255,1)), color-stop(33%, rgba(86,139,255,1)), color-stop(90%, rgba(226,38,255,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%);
+  background: -o-linear-gradient(-45deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%);
+  background: -ms-linear-gradient(-45deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%);
+  background: linear-gradient(135deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05c5ff', endColorstr='#e226ff', GradientType=1 );
+}
+
+.background.overlay {
+  position: absolute;
+  opacity: .75;
+  width: 100%;
+  height: 100vh;
+}
+
+main, header {
+  position: relative;
+}
+
+.app-name {
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 3em;
+}
+
+header {
+  height: 20vh;
+}
+
+main {
+  font-family: 'Raleway', sans-serif;
+  font-size: .75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.twitter-form {
+  padding: 20px;
+
+  color: gray;
+  width: 340px;
+  height: 190px;
+  background: white;
+}
+
+
 .App {
   text-align: center;
 }
