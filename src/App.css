@@ -116,9 +116,17 @@ main.main-city {
 }
 
 .city-name-div img {
+  width: 100%;
   height: 250px;
 }
 
 .city-stats {
   height: 80%;
+}
+
+.city-match {
+  font-size: 1.75em;
+  color: purple;
+  font-weight: bold;
+  margin-bottom: 25px;
 }

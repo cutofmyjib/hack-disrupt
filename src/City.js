@@ -18,21 +18,61 @@ class City extends Component {
   }
 
   render() {
+    if (this.state.city) {
+      var nightstyle = {
+      marginBottom: '25px',
+      height: '8px',
+      width: ''+ (this.state.city.scores.nightlife * 100) +'%',
+      background: 'linear-gradient(135deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%)',
+      filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#05c5ff", endColorstr="#e226ff", GradientType=1 )'
+      }
+
+      var workstyle = {
+        marginBottom: '25px',
+        height: '8px',
+        width: ''+ (this.state.city.scores.places_to_work * 100) +'%',
+        background: 'linear-gradient(135deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%)',
+        filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#05c5ff", endColorstr="#e226ff", GradientType=1 )'
+      }
+
+      var safetystyle = {
+        marginBottom: '25px',
+        height: '8px',
+        width: ''+ (this.state.city.scores.safety * 100) +'%',
+        background: 'linear-gradient(135deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%)',
+        filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#05c5ff", endColorstr="#e226ff", GradientType=1 )'
+      }
+
+      var freedomstyle = {
+        marginBottom: '25px',
+        height: '8px',
+        width: ''+ (this.state.city.scores.freedom_score * 100) +'%',
+        background: 'linear-gradient(135deg, rgba(5,197,255,1) 0%, rgba(86,139,255,1) 33%, rgba(226,38,255,1) 90%)',
+        filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr="#05c5ff", endColorstr="#e226ff", GradientType=1 )'
+      }
+    }
+
+
     const content = (!this.state.city) ? <div>Loading</div> : (
         <main className="main-city">
         <div className="city-name-div">
           <img src={"http://nomadlist.com"+this.state.city.media.image['1000']} />
           <h3 className="city-name">City: {this.state.city.info.city.name}</h3>
           <div className="city-stats">
-          <div>Match: {parseInt(this.state.match * 100)} %</div>
+          <div className="city-match">Match: {parseInt(this.state.match * 100)} %</div>
           <div>Nightlife: {this.state.city.scores.nightlife * 100} %</div>
+          <div style={nightstyle}></div>
           <div>Places to work: {this.state.city.scores.places_to_work * 100} %</div>
+          <div style={workstyle}></div>
           <div>Safety: {this.state.city.scores.safety * 100}%</div>
+          <div style={safetystyle}></div>
           <div>Freedom: {this.state.city.scores.freedom_score * 100}%</div>
+          <div style={freedomstyle}></div>
         </div>
         </div>
       </main>
       )
+
     return (
       <div className="App">
       <div className="secondary-header background overlay"></div>
@@ -42,7 +82,7 @@ class City extends Component {
             <span className="pull"><i className="material-icons reverse">play_arrow</i></span>
             ATE
             </h1>
-        </header>
+      </header>
         {content}
       </div>
     );
