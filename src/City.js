@@ -77,11 +77,7 @@ class City extends Component {
       <div className="App">
       <div className="secondary-header background overlay"></div>
       <header className="header-nav">
-          <h1 className="app-name">
-            DESTIN<br />
-            <span className="pull"><i className="material-icons reverse">play_arrow</i></span>
-            ATE
-            </h1>
+          <h1 className="app-name">DESTINATE</h1>
       </header>
         {content}
       </div>
