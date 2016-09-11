@@ -12,14 +12,27 @@ class City extends Component {
 
   render() {
     return (
-      <div>
-        <h3>City: {this.state.city.info.city.name}</h3>
-        <img src={`https://nomadlist.com/${this.state.city.media.image['1000']}`} />
-        <ul>
-          <li>Nightlife: {this.state.city.scores.nightlife * 100} %</li>
-          <li>Places to work: {this.state.city.scores.places_to_work * 100} %</li>
-          <li>Friendly to foreigners: {this.state.city.scores.friendly_to_foreigners * 100}%</li>
-        </ul>
+      <div className="App">
+      <div className="secondary-header background overlay"></div>
+      <header className="header-nav">
+          <h1 className="app-name">
+            DESTIN<br />
+            <span className="pull"><i className="material-icons reverse">play_arrow</i></span>
+            ATE
+            </h1>
+        </header>
+        <main className="main-city">
+          <div className="city-name-div">
+            <img src={"http://nomadlist.com"+this.state.city.media.image['1000']} />
+            <h3 className="city-name">City: {this.state.city.info.city.name}</h3>
+            <div className="city-stats">
+            <div>Nightlife: {this.state.city.scores.nightlife * 100} %</div>
+            <div>Places to work: {this.state.city.scores.places_to_work * 100} %</div>
+            <div>Friendly to foreigners: {this.state.city.scores.friendly_to_foreigners * 100}%</div>
+          </div>
+          </div>
+
+        </main>
       </div>
     );
   }
